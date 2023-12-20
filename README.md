@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-    <img src="#assets/foto_perfil.jpg" height="200" width="200" alt="Henrique Queiroz" />
+    <img src="assets/foto_perfil.jpg" height="200" width="200" alt="Henrique Queiroz" />
 </p>
 
 <!-- Apresentação -->
