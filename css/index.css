@@ -1,0 +1,150 @@
+header {
+    width: 100%;
+    height: 800px;
+    padding: 2% 15% 0 15%;
+    background-color: #06DC5A;
+}
+
+main{
+    padding: 3% 10%;
+    background-color: #1B1C1E;
+    color: #DDE2DE;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li{
+    height: fit-content;
+    font-size: 18px;
+}
+
+.navigation ul li h1{
+    font-size: 32px;
+}
+
+#sobre_mim{
+    display: flex;
+    justify-content: space-between;
+    background-color: light-gray;
+}
+
+#sobre_mim article{
+    width: 70%;
+}
+
+#sobre_mim picture{
+    width: 20%;
+}
+
+#sobre_mim article p {
+    text-align: justify;
+}
+
+#sobre_mim picture img{
+    width: 100%;
+}
+
+#sobre_mim div p{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+#projetos nav{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 18px
+}
+
+#projetos h2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#cabecalho-rodape{
+    display: flex;
+    padding: 0 2%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 2%;
+}
+
+#cabecalho-rodape ul{
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    gap: 20px;
+}
+
+#tecnologias div {
+    color: #000000;
+    background-color: #FFF5EE;
+}
+
+#contato picture{
+    width: 40%;
+}
+
+#contato form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#contato form input, #contato form textarea{
+    padding: 2% 4%;
+    color: #FFFFFF  ;
+    background-color: #303235;
+    border: none;
+    border-bottom: solid 2px #06DC5A;
+}
+
+#contato form input:focus-visible, #contato form textarea:focus-visible{
+    outline: 2px thick #FFFFFF;
+}
+
+#contato form button{
+    border: none;
+    border-radius: 10px;
+    padding: 2% 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #DDE2DE;
+    background-color: #2B4FBD;
+}
+
+#navigation-rodape{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+}
+
+#navigation-rodape ul{
+    list-style: none;
+}
+
+#navigation-rodape ul li h4{
+    margin-top: 0;
+}
+
+.white{
+    color: #DDE2DE;
+}
+
+.black{
+    color: #1B1C1E;
+}
