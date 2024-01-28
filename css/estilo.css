@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #1B1C1E;
+    --secondary-color: #DDE2DE;
+    --contrast-color: #06DC5A;
 }
 
 body{
@@ -12,16 +20,16 @@ body{
     padding: 0;
 }
 
-h2{
+h2, h3, figure{
     margin: 0;
     padding: 0;
 }
 
 a{
     text-decoration: none;
-    color: #1B1C1E;
+    color: var(--primary-color);
 }
 
 section{
-    margin: 10% 0;
+    margin: 5% 0;
 }

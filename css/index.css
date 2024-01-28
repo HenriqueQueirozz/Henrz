@@ -1,18 +1,19 @@
 header {
     width: 100%;
-    height: 800px;
+    height: 85vh;
     padding: 2% 15% 0 15%;
-    background-color: #06DC5A;
+    background-color: var(--contrast-color);
 }
 
 main{
     padding: 3% 10%;
-    background-color: #1B1C1E;
-    color: #DDE2DE;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2em;
+    margin-bottom: 2%;
 }
 
 .navigation ul{
@@ -26,62 +27,69 @@ h2 {
 
 .navigation ul li{
     height: fit-content;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 .navigation ul li h1{
-    font-size: 32px;
+    font-size: 2.1em;
 }
 
-#sobre_mim{
+#outdoor{
     display: flex;
-    justify-content: space-between;
-    background-color: light-gray;
+    justify-content: center;
 }
 
-#sobre_mim article{
-    width: 70%;
+.typing-animation {
+    width: fit-content;
+    height: fit-content;
+    font-size: 2em;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-#sobre_mim picture{
-    width: 20%;
+.typing-animation::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: blinkCursor .7s infinite;
 }
 
-#sobre_mim article p {
-    text-align: justify;
+#about {
+    display: flex;
 }
 
-#sobre_mim picture img{
-    width: 100%;
+#about img {
+    border-radius: 24px 0 0 24px;
 }
 
-#sobre_mim div p{
-    text-align: justify;
-    font-size: 16px;
-    line-height: 28px;
+#about article {
+    padding: 2% 5%;
+	background-color: #37393D;
+	border-radius: 0 24px 24px 0;
 }
 
-#projetos nav{
-    width: 60%;
-    margin: 0 auto;
-    font-size: 18px
+@keyframes blinkCursor {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
-#projetos h2{
-    text-align: center;
-    margin-bottom: 5%;
-}
-
-#cabecalho-rodape{
+#footer-header{
     display: flex;
     padding: 0 2%;
     justify-content: space-between;
     align-items: center;
-    font-size: 24px;
+    font-size: 1.5em;
     margin-bottom: 2%;
 }
 
-#cabecalho-rodape ul{
+#footer-header ul{
     list-style: none;
     display: inline-flex;
     align-items: center;
@@ -89,62 +97,30 @@ h2 {
     gap: 20px;
 }
 
-#tecnologias div {
-    color: #000000;
-    background-color: #FFF5EE;
-}
-
-#contato picture{
-    width: 40%;
-}
-
-#contato form{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-#contato form input, #contato form textarea{
-    padding: 2% 4%;
-    color: #FFFFFF  ;
-    background-color: #303235;
-    border: none;
-    border-bottom: solid 2px #06DC5A;
-}
-
-#contato form input:focus-visible, #contato form textarea:focus-visible{
-    outline: 2px thick #FFFFFF;
-}
-
-#contato form button{
-    border: none;
-    border-radius: 10px;
-    padding: 2% 0;
-    font-weight: bold;
-    font-size: 18px;
-    color: #DDE2DE;
-    background-color: #2B4FBD;
-}
-
-#navigation-rodape{
+#footer-navigation{
     display: flex;
     justify-content: space-around;
     padding-bottom: 5%;
 }
 
-#navigation-rodape ul{
+#footer-navigation ul{
     list-style: none;
 }
 
-#navigation-rodape ul li h4{
+#footer-navigation ul li h4{
     margin-top: 0;
 }
 
-.white{
-    color: #DDE2DE;
-}
+@media screen and (max-width: 800px) {
+    *{
+        font-size: 14px;
+    }
 
-.black{
-    color: #1B1C1E;
-}
+    #home .navigation ul{
+        justify-content: center;
+    }
+
+    #home .navigation ul li:nth-child(2n + 1){
+        display: none;
+    }
+}  
