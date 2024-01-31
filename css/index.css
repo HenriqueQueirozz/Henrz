@@ -19,7 +19,7 @@ h2 {
 .navigation ul{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
