@@ -74,14 +74,27 @@ h2 {
     font-style: italic;
 }
 
+#about{
+    //box-shadow: 0 8px 32px 0 rgba( 6, 220, 90, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 43, 79, 189, 0.4);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+	border-radius: 24px;
+}
+
 #about img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 24px 0 0 24px;
 }
 
 #about article {
     padding: 2% 5%;
-	background-color: #37393D;
 	border-radius: 0 24px 24px 0;
+	//background-color: #37393D;
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 20px );
+    --webkit-backdrop-filter: blur( 20px );
 }
 
 #about article h2{
@@ -98,6 +111,10 @@ h2 {
     font-size: 1.5em;
 }
 
+#about .network-list a{
+    color: var(--secondary-color);
+}
+
 #services{
     display: flex;
     justify-content: space-between;
@@ -105,21 +122,69 @@ h2 {
 
 .service-card{
     display: flex;
-}
-
-.service-card img{
-    width: 400px;
-    height: 200px;
+    flex-direction: column;
+    width: 45%;
+    box-shadow: 0 8px 32px 0 rgba( 43, 79, 189, 0.4);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+	border-radius: 24px;
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 20px );
+    --webkit-backdrop-filter: blur( 20px );
 }
 
 .service-card article{
-    padding: 2% 5%;
+    padding: 5% 10%;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+}
+
+.service-card article h3{
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 1.4em;
 }
 
 #projects{
     height: 1000px;
-    background-color: blue;
     border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba( 43, 79, 189, 0.4);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    //background-color: #2b4fbd;
+    background: rgba( 43, 79, 189, 0.5);
+    backdrop-filter: blur( 5px );
+    --webkit-backdrop-filter: blur( 5px );
+    display: flex;
+}
+
+.project-list {
+    width: 30%;
+    height: auto;
+    overflow-y: scroll;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.project-list img{
+    width: 100%;
+}
+
+.project-apresentation {
+    width: 70%;
+    height: auto;
+    padding: 3% 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-apresentation img {
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
 }
 
 #footer-header{
