@@ -11,74 +11,67 @@
             <nav class="navigation">
                 <ul>
                     <li>
-                        <a href="index.html"><h1>Henrz</h1></a>
+                        <a href="index.html"><h1 class="logo">Henrz</h1></a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="content">
             <div id="outdoor">
                 <h2 class="typing-animation">Henrique Queiroz de Paula_</h2>
             </div>
-            <section id="about">
+            <section id="about-me" class="neon-card transparent-card">
                 <img src="./assets/foto_perfil.jpg" alt="">
                 <article>
-                    <h2>Sobre mim</h2>
+                    <h2 class="title-section">Sobre mim</h2>
                     <span class="subtitle">Faça queimar...</span>
                     <div>
-                        <p>Você já teve um sonho? Um daqueles bem loucos, que só de pensar enchem o coração, enchem nossas mentes e transbordam até os nossos olhos com um brilho intenso, capaz de iluminar qualquer escuridão.</p>
-                        <p>Prazer em te conhecer, eu sou o Henrique e sou um desenvolvedor de sistemas, apaixonado por competições de programação e estudar sobre a área, a partir daqui você poderá conhecer um pouquinho de mim, projetos dos quais participei e trabalhos que estarei desenvolvendo.</p>
+                        <p>Você já teve um sonho? Um daqueles bem loucos, que só de pensar enchem o coração, enchem nossas mentes e transbordam até os nossos olhos com um brilho intenso, capaz de iluminar qualquer escuridão!!</p>
+                        <p>Prazer em te conhecer, eu sou o Henrique e sou um desenvolvedor de sistemas, apaixonado por competições de programação e estudar sobre a área, a partir daqui você poderá conhecer um pouquinho de mim, projetos dos quais participei e trabalhos que estou desenvolvendo.</p>
                         <p>Caso queira conversar mais profundamente sobre algum assunto ou tema, sinta-se a vontade para entrar em contato através das minhas redes.</p>
                     </div>
                     <ul class="network-list">
-                        <li><a href="https://www.instagram.com/eaihenriz/"><i class="bi bi-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/henrique-queirozz/"><i class="bi bi-linkedin"></i></a></li>
-                        <li><a href="https://github.com/HenriqueQueirozz"><i class="bi bi-github"></i></a></li>
+                        <li><a href="https://github.com/HenriqueQueirozz" target="_blank"><i class="bi bi-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/henrique-queirozz/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/eaihenriz/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                     </ul>
                 </article>
             </section>
             <section id="services">
-                <div class="service-card">
-                    <img src="./assets/web_dev.jpg" alt="">
+                <div class="service-card neon-card transparent-card">
                     <article>
                         <h3>Desenvolvedor Web</h3>
+                        <span class="subtitle">Faça queimar</span>
                         <p>Participo de campeonatos desde de o ensino médio, cada vez adquirindo mais e mais gosto, atualmente o foco esta em alcançar bons resultados no Interfatecs e na SBC (Sociedade Brasileira de Computação).</p>
                     </article>
                 </div>
-                <div class="service-card">
-                    <img src="./assets/web_dev.jpg" alt="">
+                <div class="service-card neon-card transparent-card">
                     <article>
                         <h3>Programação competitiva</h3>
+                        <span class="subtitle">Faça queimar</span>
                         <p>Participo de campeonatos desde de o ensino médio, cada vez adquirindo mais e mais gosto, atualmente o foco esta em alcançar bons resultados no Interfatecs e na SBC (Sociedade Brasileira de Computação).</p>
                     </article>
                 </div>
             </section>
-            <section id="projects">
+            <section id="projects" class="neon-card transparent-card">
                 <div class="project-list">
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <img src="./assets/web_dev.jpg" alt="">
+                    <img src="./assets/spike_store.png" alt="Spike Store" onclick="selectProject('spikeStore');">
+                    <img src="./assets/black_cat_defense.png" alt="Black Cat Defense" onclick="selectProject('blackCatDefense');">
+                    <img src="./assets/cafe_digital.png" alt="Café Digital" onclick="selectProject('cafeDigital');">
+                    <img src="./assets/academic.png" alt="Academic" onclick="selectProject('academic');">
+                    <img src="./assets/pancs.png" alt="PANCs" onclick="selectProject('pancs');">
+                    <img src="./assets/go_banco.png" alt="Go Banco" onclick="selectProject('goBanco');">
+                    <img src="./assets/go_monitoramento.png" alt="Go Monitoramento" onclick="selectProject('goMonitoramento');">
+                    <img src="./assets/to_do_list.png" alt="To do list" onclick="selectProject('toDoList');">
                 </div>
                 <div class="project-apresentation">
-                    <h2>Nome do projeto</h2>
-                    <img src="./assets/web_dev.jpg" alt="">
-                    <div>
-                        <span>PHP</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Javascript</span>
+                    <h2 class="title-project">Spike store</h2>
+                    <img class="image-project" src="./assets/spike_store.png" alt="">
+                    <div class="technologies-project">
+                        <span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">MySQL</span>
                     </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <span>Ver mais</span>
+                    <p class="description-project">A "Spike Store" é um projeto criado como parte de um teste técnico de desenvolvimento de software<, o objetivo era o desenvolvimento de uma plataforma para cadastro de vendedores e suas respectivas vendas, o desafio explorou tecnologias como PHP e MySQL, exigindo funcionalidade como um CRUD (Create, Read, Update e Delete) de informações, assim como agendamento de rotinas.</p>
+                    <a class="link-project" href="https://github.com/HenriqueQueirozz/spike-store"><span class="see-more">Ver mais</span></a>
                 </div>
             </section>
         </main>
@@ -88,28 +81,11 @@
                     Henrz
                 </h3>
                 <ul class="network-list">
-                    <li><a href="https://www.instagram.com/eaihenriz/"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/henrique-queirozz/"><i class="bi bi-linkedin"></i></a></li>
-                    <li><a href="https://github.com/HenriqueQueirozz"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://github.com/HenriqueQueirozz" target="_blank"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/henrique-queirozz/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/eaihenriz/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                 </ul>
             </div>
-            <!-- <nav id="footer-navigation">
-                <ul>
-                    <li><a href="index.html"><h4>Início</h4></a></li>
-                    <li><a href="index.html#about">Sobre mim</a></li>
-                    <li><a href="index.html#services">Focos de atuação</a></li>
-                    <li><a href="index.html#projects">Projetos</a></li>
-                </ul>
-                <ul>
-                    <li><a href="curriculo.html"><h4>Currículo</h4></a></li>
-                    <li>Item 1</li>
-                </ul>
-                <ul>
-                    <li><a href="projetos.html"><h4>Projetos</h4></a></li>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                </ul>
-            </nav> -->
         </footer>
         <script src="scripts/script.js"></script>
     </body>

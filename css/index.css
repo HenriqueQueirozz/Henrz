@@ -1,19 +1,40 @@
-header {
+/* Components */
+.neon-card{
+    box-shadow: 0 8px 32px 0 rgba( 43, 79, 189, 0.4);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+	border-radius: 24px;
+}
+
+.transparent-card{
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 20px );
+    --webkit-backdrop-filter: blur( 20px );
+}
+
+.title-section{
+    font-size: 2rem;
+}
+
+.subtitle{
+    font-style: italic;
+}
+
+.network-list{
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    gap: 20px;
+}
+
+/* ===== */
+
+/* Header */
+#home {
     width: 100%;
-    height: 85vh;
+    height: 85dvh;
     padding: 2% 15% 0 15%;
     background-color: var(--contrast-color);
-}
-
-main{
-    padding: 3% 10%;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 2%;
 }
 
 .navigation ul{
@@ -25,29 +46,29 @@ h2 {
     padding: 0;
 }
 
-.navigation ul li{
-    height: fit-content;
-    font-size: 1.2em;
+.logo{
+    font-size: clamp(2.5rem, 2vw, 6rem);
+}
+/* ===== */
+
+/* Main */
+#content {
+    padding: 3% 10%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
-.navigation ul li h1{
-    font-size: 2.1em;
-}
-
+/* Outdoor */
 #outdoor{
     display: flex;
     justify-content: center;
 }
 
 .typing-animation {
-    width: fit-content;
     height: fit-content;
-    font-size: 2em;
+    text-align: center;
+    font-size: clamp(1.5rem, 1.8vw, 2.5rem);
     font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 .typing-animation::after {
@@ -65,128 +86,141 @@ h2 {
         opacity: 0;
     }
 }
+/* ===== */
 
-#about {
+/* About me */
+#about-me {
     display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.subtitle{
-    font-style: italic;
-}
-
-#about{
-    //box-shadow: 0 8px 32px 0 rgba( 6, 220, 90, 0.2 );
-    box-shadow: 0 8px 32px 0 rgba( 43, 79, 189, 0.4);
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-	border-radius: 24px;
-}
-
-#about img {
+#about-me img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 24px 0 0 24px;
 }
 
-#about article {
+#about-me article {
     padding: 2% 5%;
-	border-radius: 0 24px 24px 0;
-	//background-color: #37393D;
-    background: rgba( 255, 255, 255, 0.1 );
-    backdrop-filter: blur( 20px );
-    --webkit-backdrop-filter: blur( 20px );
 }
 
-#about article h2{
-    margin-bottom: 0;
-}
-
-#about article p:first-child{
+#about-me article p:first-child{
     margin-top: 5%;
 }
 
-#about .network-list {
-    margin: 2% 0 0 90%;
+#about-me .network-list{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin: 5% auto 0 auto;
     padding: 0;
-    font-size: 1.5em;
+    gap: 0;
 }
 
-#about .network-list a{
+#about-me .network-list a{
     color: var(--secondary-color);
+    font-size: 1.5rem;
 }
 
+#about-me .network-list a :hover{
+    color: #ACB0AD;
+}
+/* ===== */
+
+/* Services */
 #services{
     display: flex;
     justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .service-card{
     display: flex;
     flex-direction: column;
     width: 45%;
-    box-shadow: 0 8px 32px 0 rgba( 43, 79, 189, 0.4);
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-	border-radius: 24px;
-    background: rgba( 255, 255, 255, 0.1 );
-    backdrop-filter: blur( 20px );
-    --webkit-backdrop-filter: blur( 20px );
 }
 
 .service-card article{
     padding: 5% 10%;
 }
 
-.service-card img {
-    width: 100%;
-    border-radius: 24px 24px 0 0;
+.service-card article p{
+    margin-top: 10%;
 }
+/* ===== */
 
-.service-card article h3{
-    text-align: center;
-    margin-bottom: 5%;
-    font-size: 1.4em;
-}
-
+/* Projects */
 #projects{
-    height: 1000px;
-    border-radius: 24px;
-    box-shadow: 0 8px 32px 0 rgba( 43, 79, 189, 0.4);
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    //background-color: #2b4fbd;
-    background: rgba( 43, 79, 189, 0.5);
-    backdrop-filter: blur( 5px );
-    --webkit-backdrop-filter: blur( 5px );
+    max-height: 800px;
     display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: rgba( 43, 79, 189, 0.3);
 }
 
 .project-list {
-    width: 30%;
+    width: 25%;
     height: auto;
     overflow-y: scroll;
     padding: 2%;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 25px;
 }
 
 .project-list img{
     width: 100%;
+    border-radius: 24px;
 }
 
 .project-apresentation {
-    width: 70%;
+    width: 75%;
     height: auto;
-    padding: 3% 2%;
+    padding: 3% 8%;
     display: flex;
     flex-direction: column;
 }
 
-.project-apresentation img {
+.project-apresentation .title-project{
+    font-size: 2.8rem;
+    margin-bottom: 4%;
+}
+
+.project-apresentation .image-project {
     width: 100%;
     margin: 0 auto;
+    border-radius: 24px;
     object-fit: cover;
 }
 
+.technologies-project{
+    margin: 4% 0;
+    display: flex;
+    gap: 12px;
+}
+
+.description-project{
+    margin: 0 0 2% 0;
+}
+
+.tag {
+    border-radius: 16px;
+    border: var(--contrast-color) 1px solid;
+    background: rgba( 6, 220, 90, 0.7);
+    padding: 0.5% 3%;
+}
+
+.link-project{
+    text-decoration: underline; 
+    margin-left: auto;
+    color: var(--secondary-color);
+}
+/* ===== */
+
+/* Footer */
 #footer-header{
     display: flex;
     padding: 0 2%;
@@ -195,39 +229,8 @@ h2 {
     font-size: 1.5em;
     margin-bottom: 2%;
 }
-
-.network-list{
-    list-style: none;
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
-    gap: 20px;
-}
-
-#footer-navigation{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 5%;
-}
-
-#footer-navigation ul{
-    list-style: none;
-}
-
-#footer-navigation ul li h4{
-    margin-top: 0;
-}
+/* ===== */
 
 @media screen and (max-width: 800px) {
-    *{
-        font-size: 14px;
-    }
 
-    #home .navigation ul{
-        justify-content: center;
-    }
-
-    #home .navigation ul li:nth-child(2n + 1){
-        display: none;
-    }
 }  
